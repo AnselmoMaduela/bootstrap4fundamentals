@@ -40,7 +40,7 @@ gulp.task('cpjs', function() {
 * It was created to minify the file before it was copied
 * to the dist folder
 */
-gulp.task('compress', function() {
+gulp.task('cpopper', function() {
 	gulp.src('node_modules/popper.js/dist/popper.js')
     .pipe(gulp.dest('dist/js/'));
 });
