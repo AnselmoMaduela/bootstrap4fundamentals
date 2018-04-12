@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap4fundamentals",
+  "version": "1.0.0",
+  "description": "Following along with the Bootrap\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cst\u001b[2~\u001b[2~a\u001bstrap 4 Fundamentals from linkedin with Ray Villalobos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnselmoMaduela/bootstrap4fundamentals.git"
+  },
+  "keywords": [
+    "bootstrap4",
+    "boostrap",
+    "jquery",
+    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dtstrap",
+    "jquery",
+    "html+css",
+    "js\u001b[D\u001b[+\u001b[C\u001b[C\u001b[C\u001b[D",
+    "gridcss"
+  ],
+  "author": "Anselmo Maduela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnselmoMaduela/bootstrap4fundamentals/issues"
+  },
+  "homepage": "https://github.com/AnselmoMaduela/bootstrap4fundamentals#readme"
+}
