@@ -29,6 +29,7 @@
   "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.1.0",
+    "gulp": "^3.9.1",
     "jquery": "^3.3.1"
   }
 }
