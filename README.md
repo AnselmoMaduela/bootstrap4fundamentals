@@ -18,7 +18,7 @@ Basic Knowlodge with:
 * [NPM](https://www.npmjs.com/) - for Dependency Management
 * [Gulp](https://github.com/gulpjs/gulp/blob/v3.9.1/docs/API.md) - for Build process Automation
 
-The script bellow you will find in [gilpfile](gulpfile.js)
+The script bellow you will find in [gulpfile](gulpfile.js)
 ```
 	gulp.task("compilecss", function() {
 		return gulp.src("./source/sass/**/*.scss")
