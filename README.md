@@ -20,13 +20,13 @@ Basic Knowlodge with:
 
 The script bellow you will find in [gulpfile](gulpfile.js)
 ```
-	gulp.task("compilecss", function() {
-		return gulp.src("./source/sass/**/*.scss")
-			.pipe(sass({outputStyle: 'compressed'}))
-			.pipe(sass())
-			.on('error', notify.onError({title: 'Erro ao compilar', message: '<%= error.message %>'}))
-			.pipe(gulp.dest("./dist/css"));
-	});
+gulp.task("compilecss", function() {
+  return gulp.src("./source/sass/**/*.scss")
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass())
+    .on('error', notify.onError({title: 'Erro ao compilar', message: '<%= error.message %>'}))
+    .pipe(gulp.dest("./dist/css"));
+});
 ```
 The above task looks for **scss** file modificated, compiles it and minifies using [gulp-sass](https://www.npmjs.com/package/gulp-sass), and it finishes by setting *or* copies the new file to the folder dist/css with the *.css* extension 
 
