@@ -1,5 +1,8 @@
 var gulp = require("gulp");
-
+var notify = require("gulp-notify");
+// var uglify = require("gulp-uglify");
+// var pump = require('pump');
+ 
 /*
 * #sass task
 * 
@@ -30,3 +33,34 @@ gulp.task('cpjs', function() {
         	     'node_modules/jquery/dist/jquery.slim.min.js'])
     .pipe(gulp.dest('dist/js/'));
 });
+
+/*
+* #compress
+* This task copies the popper.js to dist/js
+* It was created to minify the file before it was copied
+* to the dist folder
+*/
+gulp.task('compress', function() {
+	gulp.src('node_modules/popper.js/dist/popper.js')
+    .pipe(gulp.dest('dist/js/'));
+});
+
+
+// gulp.task('compress', function (cb) {
+//   pump([
+//         gulp.src('node_modules/popper.js/dist/popper.js'),
+//         uglify(),
+//         gulp.dest('dist/js/')
+//     ],
+//     cb
+//   );
+// });
+
+
+// gulp.task("compilecss", function() {
+//   return gulp.src("./src/sass/**/*.scss")
+//     .pipe(sass({outputStyle: 'compressed'}))
+//     .pipe(sass())
+//     .on('error', notify.onError({title: 'Erro ao compilar', message: '<%= error.message %>'}))
+//     .pipe(gulp.dest("./dist/css"));
+// });

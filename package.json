@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnselmoMaduela/bootstrap4fundamentals.git"
+    "url": "git+https://github.com/amaduela/bootstrap4fundamentals.git"
   },
   "keywords": [
     "bootstrap4",
@@ -23,13 +23,17 @@
   "author": "Anselmo Maduela",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AnselmoMaduela/bootstrap4fundamentals/issues"
+    "url": "https://github.com/amaduela/bootstrap4fundamentals/issues"
   },
-  "homepage": "https://github.com/AnselmoMaduela/bootstrap4fundamentals#readme",
+  "homepage": "https://github.com/amaduela/bootstrap4fundamentals#readme",
   "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.1.0",
     "gulp": "^3.9.1",
-    "jquery": "^3.3.1"
+    "gulp-notify": "^3.2.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "pump": "^3.0.0"
   }
 }
