@@ -21,7 +21,7 @@ Basic Knowlodge with:
 The script bellow you will find in [gulpfile](gulpfile.js)
 ```
 gulp.task("compilecss", function() {
-  return gulp.src("./source/sass/**/*.scss")
+  return gulp.src("./src/sass/**/*.scss")
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(sass())
     .on('error', notify.onError({title: 'Erro ao compilar', message: '<%= error.message %>'}))
@@ -47,10 +47,6 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
