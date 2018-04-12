@@ -1,6 +1,6 @@
-# Bootstrap Fundamentals
+# Bootstrap 4 Fundamentals
 
-This is a result for following along the boostrap fundamental course from Linkedin Learning Platform, this is a "personal" project but you can use it to perhaps correct you error while following  Ray's course. Enjoy
+This is a result for following along the boostrap fundamental course from Linkedin Learning Platform, this is a "personal" project but you can use it to perhaps correct you error while following  Ray's course. **Enjoy**
 
 ## Getting Started
 
@@ -8,17 +8,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Basic Knowlodge with:
+* [Gulp](https://gulpjs.com/) 
+* [Sass](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Boostrap 4](https://getbootstrap.com) - the Web framework used
+* [NPM](https://www.npmjs.com/) - for Dependency Management
+* [Gulp](https://github.com/gulpjs/gulp/blob/v3.9.1/docs/API.md) - for Build process Automation
 
+The script bellow you will find in [gilpfile](gulpfile.js)
 ```
-Give examples
+	gulp.task("compilecss", function() {
+		return gulp.src("./source/sass/**/*.scss")
+			.pipe(sass({outputStyle: 'compressed'}))
+			.pipe(sass())
+			.on('error', notify.onError({title: 'Erro ao compilar', message: '<%= error.message %>'}))
+			.pipe(gulp.dest("./dist/css"));
+	});
 ```
+The above task looks for **scss** file modificated, compiles it and minifies using [gulp-sass](https://www.npmjs.com/package/gulp-sass), and it finishes by setting *or* copies the new file to the folder dist/css with the *.css* extension 
 
 ### Installing
 
@@ -38,52 +48,16 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Anselmo Maduela** - *Initial work* - [Bootstrap4Fundamentals](https://github.com/bootstrap4fundamentals)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+You can also checkout the list of [contributors](https://github.com/AnselmoMaduela/bootstrap4fundamentals/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+This project is licensed under the MIT License - click [here](https://rem.mit-license.org/) for details
